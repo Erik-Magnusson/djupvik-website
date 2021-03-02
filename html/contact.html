@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <title>Djupviks hamn</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+    </style>       
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <h1>Djupviks hamn</h1>
+        </div>
+        <nav id="menu">
+            <script src='../assets/js/menu.js' type="module"></script>
+            <div id=dropdown>
+                <div id="dropbtn" title='Meny'><div></div><div></div><div></div></div>
+                <div id=drop-contents>
+                    <a href="../index.html">Hem</a>
+                    <a href="guestharbor.html">Gästhamn</a>
+                    <a href="weather.html">Väder</a>
+                    <a href="destinations.html">Turistmål</a>
+                    <a href="history.html">Historia</a>
+                    <a href="memberinfo.html">Medlemsinformation</a>
+                    <a href="#">Kontakt</a>
+                    <a href="english.html">Information in English</a>
+                </div>  
+            </div>
+            <ul id=menulist>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="guestharbor.html">Gästhamn</a></li>
+                <li><a href="weather.html">Väder</a></li>
+                <li><a href="destinations.html">Turistmål</a></li>
+                <li><a href="history.html">Historia</a></li>
+                <li><a href="memberinfo.html">Medlemsinformation</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="english.html">Information in English</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="gallery">
+        <a href="../assets/img/gallery/p1.jpg"><img src="../assets/img/gallery/thumbnail/p1.jpg" alt="Water in the forground with the harbor in the background"/></a>
+        <a href="../assets/img/gallery/p2.jpg"><img src="../assets/img/gallery/thumbnail/p2.jpg" alt="A boy fishing on the pier"/></a>
+        <a href="../assets/img/gallery/p3.jpg"><img src="../assets/img/gallery/thumbnail/p3.jpg" alt="Old fishing cabins"/></a>
+        <a href="../assets/img/gallery/p4.jpg"><img src="../assets/img/gallery/thumbnail/p4.jpg" alt="View across the water with an island on the horizon"/></a>
+    </div>
+    <main>
+        <div class="content">
+            <h2>Kontakt</h2>
+            <h3>Hamnfogde Bo Lautin</h3>
+                <p> mobil: <a href="callto:0707-920310">0707-920310</a>
+
+                    Djupviks hamnförening
+                    c/o Ekholm
+                    Eksta Hägur 170
+                    623 54 Klintehamn
+                </p>
+            <hr />
+            <h3>Kontaktformulär</h3>
+            <form action="#" method="post">
+                <fieldset>
+                <p><label for="rubrik">Rubrik:</label>
+                <input type="text" name="rubrik" id="rubrik"/></p>
+                </fieldset> 
+                <fieldset>
+                <legend>Vad gäller ärendet?</legend>
+                    <p><input type="radio" name="list" value="båtplats" id="båtplats" />
+                    <label for="båtplats">Båtplats</label></p>
+                    <p><input type="radio" name="list" value="medlem" id="medlem" />
+                    <label for="medlem">Medlemsfrågor</label></p>
+                    <p><input type="radio" name="list" value="övrigt" id="övrigt" />
+                    <label for="övrigt">Övrigt</label></p>
+                    <p><label for="meddelande">Beskrivning:</label>
+                        <textarea name="meddelande" rows="3" cols="30" id="meddelande"></textarea>
+                    </p>
+                </fieldset>
+                <fieldset>
+                <legend>Hur vill du bli kontaktad?</legend>
+                    <p><input type="radio" name="list" value="telefon" id="telefon" />
+                    <label for="telefon">Telefon</label></p>
+                    <p><input type="radio" name="list" value="viaemail" id="viaemail" />
+                    <label for="viaemail">E-mail</label></p>
+                    <p><input type="radio" name="list" value="inte" id="inte" />
+                    <label for="inte">Jag vill inte bli kontaktad</label></p>      
+    
+                    <p><label for="nummer">Mobilnummer:</label>
+                        <input type="text" name="nummer" id="nummer"/>
+                    </p>
+
+                    <p><label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email"/>
+                    </p>
+                </fieldset>
+
+                <p><input type="submit" value="Skicka" /></p>
+            </form>
+        </div>          
+    </main>
+    <footer>
+        <hr /> 
+        <p>© Copyright 2020 Djupvikshamn.se | <a href="mailto:info@djupvikshamn.se">info@djupvikshamn.se</a> 
+        </p>
+    </footer>     
+</body>
+       
+</html>

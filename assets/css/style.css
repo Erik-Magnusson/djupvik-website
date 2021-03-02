@@ -1,0 +1,462 @@
+
+    body {
+        font-size: 100%;
+        line-height: 150%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: #FEF2DE;
+        background-image: url(../img/background/640.jpg);
+    }
+
+    header {
+        display: inline-grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "top"
+        "bottom";
+        width: 100%;  
+    }
+
+    #banner {
+        background-color: #0E436B;
+        grid-area: top;
+        width: 100%;
+        
+    }
+
+    h1 {
+        font-family: 'Cabin Sketch', cursive;
+        color: white;
+        font-size: 3rem;
+        line-height: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        border-bottom: solid 3px #0E436B;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    
+
+    #menu {
+        background-color: #0E436B;
+        grid-area: bottom;      
+    }
+
+   
+    #menu ul {
+        list-style: none;
+    }
+      
+
+    #menu a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+
+    #menu a:hover, #menu a:focus{
+        text-decoration: underline;
+    }
+
+    #menu a:active {
+        color:#6292B8;
+    }
+
+    #menulist {
+        display: none;
+    }
+    #dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+    #drop-contents {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: solid 1px black;
+        margin: 1px;
+        min-width: 300px;
+        z-index: 1;
+        font-size: 1.2rem;
+    }
+
+    #dropbtn {
+        min-width: 25px;
+        min-height: 25px;
+        width: 100%;
+        background-color: #0E436B;
+        border: solid 1px white;
+        margin-left: 3px;
+    }
+    #dropbtn div {
+        min-height: 3px;
+        background-color: white;
+        margin: 4px;
+    }
+
+    #drop-contents a {
+        display:block;
+        color: black;
+    }
+
+    #drop-contents a:active {
+        color:gray;
+    }   
+
+
+    .content {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #FFFFFF;
+        opacity: 85%;
+        border: solid 3px #0E436B;
+        overflow: hidden;
+    }
+
+    p {
+        white-space: pre-line;
+    }
+
+    .date {
+        font-size: 0.9rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    .content picture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .content figure{
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        border: solid 1px black;
+    }
+
+    #gallery {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        display: none;
+    }
+
+    hr {
+        background-color: #0E436B;
+        height: 3px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .content hr {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    article {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-top: solid 1px black;
+    }
+
+    figure {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    figcaption {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        color: gray;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    footer hr {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    form {
+        padding: 1rem;
+        border: solid 1px black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+    }
+
+    form p {
+        white-space: normal;
+    }
+
+
+    #rubrik, #meddelande, #nummer, #email {
+        display: block;
+        width: 80%;
+        max-width: 18rem;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    #members {
+        table-layout: fixed;
+        width: 100%;
+        font-size: 0.5em;
+    }
+
+    #members th {
+        text-align: left;
+    }
+
+    #fnamn {
+        width: 15%;
+    }
+    #enamn {
+        width: 20%;
+    }
+    #medlemail {
+        width: 35%;
+    }
+    #medltele {
+        width: 30%;
+    }
+
+    #historia-namn {
+        table-layout: fixed;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+
+    }
+    #historia-namn caption {
+        font-weight: bold;
+        border-bottom: solid 1px black;
+    }
+    #historia-namn tr {
+        border-bottom: solid 1px black;
+    }
+
+
+    /* < --- WEATHER WIDGET --- > */
+
+    #weather table {
+        min-width: 100%;
+    }
+    #weather th  {
+        width: 25%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    #weather td {
+        font-size: 0.8rem;
+    }
+    
+    #weather td {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9rem;
+    }
+
+    /* < --- END OF WEATHER WIDGET --- > */
+
+
+@media (min-width: 720px) and (max-width: 1023px) {
+
+    body {
+        display: inline-grid;
+        grid-template-columns: auto 25%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "header header"
+        "main gallery"
+        "footer .";
+        background-image: url(../img/background/1024.jpg);
+        font-size: 110%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    #dropdown {
+        display: none;
+    }
+
+    #drop-contents a {
+        display:block;
+        color: white;
+    }
+
+    #drop-contents a:active {
+        color:gray;
+    } 
+
+    #menu {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    #menulist {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
+
+    .content picture {
+        max-width: 75%;
+    }
+  
+    
+    main {
+        grid-area: main;
+    }
+
+    #gallery {
+        display: inline-block;
+        grid-area: gallery;
+    }
+
+    #historia-namn tr {
+        text-align: center;
+    }
+
+
+    footer {
+        grid-area: footer;
+    }
+
+    #members {
+        font-size: 0.8rem;
+    }
+
+
+    /* < --- WEATHER WIDGET --- > */
+
+    #weather tr {
+        font-size: 1rem;
+    }
+    #weather td {
+        font-size: 1.1rem;
+    }
+
+    /* < --- END OF WEATHER WIDGET --- > */
+
+
+}    
+
+@media (min-width: 1024px) {
+
+    body {
+        display: inline-grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "header header header"
+        ". main gallery"
+        ". footer .";
+        background-image: url(../img/background/2560.jpg);
+        font-size: 130%;
+
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+    h2 {
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        font-size: 2.5rem;
+    } 
+    h3 {
+        font-size: 1.8rem;
+    }    
+
+    header {
+        grid-area: header;
+    }
+
+    #dropdown {
+        display: none;
+    }
+
+    #menu {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    #menu ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main {
+        grid-area: main;
+        
+    }
+
+    .content picture {
+        max-width: 60%;
+        margin-top: 1.5rem;
+    }
+
+    
+    #gallery {
+        display: inline-block;
+        grid-area: gallery;
+    }
+    
+
+    footer {
+        grid-area: footer;
+    }
+
+    #historia-namn tr {
+        text-align: center;
+    }
+
+    #members {
+        font-size: 1rem;
+    }
+    
+
+    /* < --- WEATHER WIDGET --- > */
+
+    #weather tr {
+        font-size: 1.2rem;
+    }
+    #weather td {
+        font-size: 1.3rem;
+    }
+
+    /* < --- END OF WEATHER WIDGET --- > */
+
+
+}    
